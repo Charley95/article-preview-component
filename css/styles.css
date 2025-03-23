@@ -1,106 +1,64 @@
 * {
     box-sizing: border-box;
-    padding: 0;
 }
 body {
     background-color: hsl(210, 46%, 95%);
-    font-family: Manrope, sans-serif;
-    font-size: 13px;
-    padding: 1rem;
-    
+    padding: 0 5%;
+    font-family: Manrope;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
+   display: flex;
+   flex-direction: column;
 }
-.image img {
-    border-radius: 10px 10px 0 0;  /* this creates a rounded top edge */
-}
-div {
-    margin-left: auto;
-    margin-right: auto;
-}
-.content {
-    background-color: white;
-    position: relative;
-    width: 327.5px;
-    height: 340px;
-    line-height: 1.5;
-    top: -40px;  /* this makes the content div overlap the image */
-    border-radius: 0 0 10px 10px;  /*this creates a rounded bottom edge */
+.image {
+    width: 327px;
+    height: 200px;
 }
 
+.image img{
+    border-radius: 5% 5% 0 0;
+    height: 110%;
+    width: 100%;
+    margin-top: 20px;
+}
 .paragraph1 {
-    font-weight: 700;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: bold;
     color: hsl(217, 19%, 35%);
-    padding-top: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
 }
 .paragraph2 {
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: normal;
     color: hsl(214, 17%, 51%);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
+}
+.content {
+    background-color: #fff;
+    width: 327px;
+    padding: 15px 30px;
+    border-radius: 0 0 5% 5%;
 }
 .info {
-    background-color: greenyellow;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 10px auto 0 auto;
-    width: 327.5px;
-    height: 76px;
-    max-width: 100%;
-    border-radius: 0 0 10px 10px;  /* this creates a rounded bottom edge */
+    justify-content: flex-start;
+    gap: 10px;
 }
 .avatar {
-    border-radius: 50%;  /* this makes the image round */
-    position: relative;
-    right: 15px;
-    top: 5px;
+    border-radius: 50%;
 }
-
+.avatar-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);;
+}
 .date {
-    font-weight: 500;
+    font-size: 13px;
     color: hsl(214, 17%, 51%);
-    position: relative;
-    right: 108px;
-    top: 20px;
-}
-.avatar-name{
-    font-weight: 700;
-    color: hsl(217, 19%, 35%);
-    position: relative;
-    left: 5px;
-    top: 1px;
-    bottom: 10px;
 }
 .share {
-    position: relative;
-    top: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 64px;
 }
-
-/*.money {
-    margin: 30px 10px 0 10px;
-    position: relative;
-    color: hsl(224, 23%, 55%);
-}
-.plan {
-    margin: 0 110px 20px 10px;
-    font-weight: bold;
-    position: absolute;
-    color: hsl(223, 47%, 23%);
-}
-.change {
-    margin: 0 5px 0 90px;
-}*/
 
 .attribution { 
     font-size: 11px;
