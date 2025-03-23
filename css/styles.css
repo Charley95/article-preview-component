@@ -42,24 +42,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 16px;
 }
 .avatar {
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 .avatar-name {
     font-size: 13px;
     font-weight: bold;
-    color: hsl(217, 19%, 35%);;
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+    padding: 0;
 }
 .date {
     font-size: 13px;
     color: hsl(214, 17%, 51%);
+    margin: 0;
+    padding: 0;
 }
-.share {
-    margin-left: 64px;
+.share-circle {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: 49px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.share-circle img{
+    height: 13px;
+    width: 15px;
+}
 .attribution { 
     font-size: 11px;
      text-align: center; 
