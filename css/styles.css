@@ -90,9 +90,36 @@ body {
     justify-content: center;
     align-items: center;
 }
-.share-circle img{
+.circle-large {
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    overflow: hidden;  /* Ensures the image fits within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-circle-alt {
+    background-color: hsl(214, 17%, 51%);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    overflow: hidden;
+}
+#share.active {
+    fill: white;
+}
+.social-media-icons.share-alt {
     height: 13px;
     width: 15px;
+    fill: hsl(210, 46%, 95%);
+    z-index: 100;
 }
 .social-media-icons {
     display: flex;
@@ -111,6 +138,7 @@ body {
     font-size: 13px;
     letter-spacing: 3px;
 }
+  
 .hidden {
     display: none;
 }
@@ -145,6 +173,16 @@ body {
         object-fit: cover;
         display: block; 
     }
+    .paragraph1 {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 20px;
+    }
+    .paragraph2 {
+        margin-bottom: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
     
     .content {
         width: 70%;
@@ -155,7 +193,7 @@ body {
     }
     .share-tablet {
         position: relative;
-        bottom: 150px;
+        bottom: 135px;
         left: 220px;
         display: flex;
         align-items: center;
@@ -179,9 +217,41 @@ body {
         right: 117px;
         width: 0;
         height: 0;
-        /* background-color: hsl(210, 46%, 95%); */
         border-width: 12px;
         border-style: solid;
         border-color: hsl(217, 19%, 35%) transparent transparent transparent;
     }
+    .hidden {
+        display: none;
+    }
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 730px;
+        height: 280px;
+        box-shadow: 15px 15px 100px hsl(212, 23%, 69%);
+    }
+    .paragraph1 {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+    }
+    .paragraph2 {
+        margin-bottom: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .info {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .share-tablet {
+        bottom: 140px;
+        left: 290px;
+        gap: 16px;
+    }
+
 }
