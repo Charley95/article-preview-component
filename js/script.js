@@ -1,4 +1,4 @@
-const shareBtn = document.querySelector("#share");
+const shareBtn = document.querySelector(".share");
 const activeInfo = document.querySelector(".info");
 const socialIcons = document.querySelector('.social-media-icons');
 const shareBtnAlt = document.querySelector(".share-alt");
@@ -12,7 +12,8 @@ shareBtn.addEventListener("click", function () {
     socialIcons.classList.toggle("hidden");
   } else {
     tabletActiveInfo.classList.toggle("hidden");
-    shareCircle.classList.toggle("circle-large");
+    shareCircle.classList.toggle("active");
+    shareBtn.classList.toggle("active");
   }
 });
 
@@ -28,3 +29,4 @@ window.addEventListener("resize", function () {
   socialIcons.classList.add("hidden");
 });
 
+console.log(activeInfo, shareBtn, socialIcons, shareBtnAlt, tabletActiveInfo);

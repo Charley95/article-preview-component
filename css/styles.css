@@ -90,16 +90,23 @@ body {
     justify-content: center;
     align-items: center;
 }
-.circle-large {
+.share {
+    color: hsl(214, 17%, 51%);
+}
+/* .circle-large {
     background-color: hsl(214, 17%, 51%);
     border-radius: 50%;
     width: 32px;
     height: 32px;
     margin-left: auto;
-    overflow: hidden;  /* Ensures the image fits within the circle */
+    overflow: hidden;  
     display: flex;
     justify-content: center;
     align-items: center;
+ */
+
+.share-circle.active {
+    background-color: hsl(214, 17%, 51%);
 }
 .share-circle-alt {
     background-color: hsl(214, 17%, 51%);
@@ -112,8 +119,10 @@ body {
     margin-left: auto;
     overflow: hidden;
 }
-#share.active {
-    fill: white;
+/* This css rule selects and styles the svg icon when clicked */
+.share-circle.active svg{
+    color: white;
+    box-shadow: 15px 15px 100px hsl(217, 19%, 35%);
 }
 .social-media-icons.share-alt {
     height: 13px;
@@ -145,7 +154,7 @@ body {
 .attribution { 
     font-size: 11px;
      text-align: center;
-     margin-top: 40px;
+     margin-top: 70px;
     }
     .attribution a {
          color: hsl(228, 45%, 44%); 
@@ -161,13 +170,15 @@ body {
         align-items: stretch;
         width: 608px;
         height: 346px;
+        border-radius: 15px 30px;
+        box-shadow: 15px 15px 100px hsl(212, 23%, 69%); /* This adds a shadow effect to the container */
     }
     .image {
         width: 40%;
         height: 100%;
     }
     .image img {
-        border-radius: 5% 0 0 5%;
+        /* border-radius: 5% 0 0 5%; */
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -186,7 +197,7 @@ body {
     
     .content {
         width: 70%;
-        border-radius: 0 5% 5% 0;
+        /* border-radius: 0 5% 5% 0; */
         height: 100%;
         justify-content: center;
         position: relative;
@@ -210,7 +221,12 @@ body {
         color: hsl(212, 23%, 69%);
         font-size: 13px;
     }
-    .share-tablet::after {
+    .hidden {
+        display: none;
+    }
+
+    /* This css rule below styles the arrow pointing down when the share button is clicked */
+    .share-tablet::after {       
         content: "";
         position: absolute;
         top: 100%;
@@ -220,9 +236,6 @@ body {
         border-width: 12px;
         border-style: solid;
         border-color: hsl(217, 19%, 35%) transparent transparent transparent;
-    }
-    .hidden {
-        display: none;
     }
 }
 
