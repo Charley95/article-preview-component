@@ -170,7 +170,7 @@ body {
         align-items: stretch;
         width: 608px;
         height: 346px;
-        border-radius: 15px 30px;
+        border-radius: 10px 10px 10px 10px;
         box-shadow: 15px 15px 100px hsl(212, 23%, 69%); /* This adds a shadow effect to the container */
     }
     .image {
@@ -178,7 +178,7 @@ body {
         height: 100%;
     }
     .image img {
-        /* border-radius: 5% 0 0 5%; */
+        border-radius: 10px 0 0 10px;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -197,7 +197,7 @@ body {
     
     .content {
         width: 70%;
-        /* border-radius: 0 5% 5% 0; */
+        border-radius: 0 10px 10px 0;
         height: 100%;
         justify-content: center;
         position: relative;
